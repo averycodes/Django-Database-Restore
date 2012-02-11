@@ -18,11 +18,13 @@ Take down your site for maintenance and backup your current db instance in case 
 
 ### Modify the script files with your settings
 In **db_cache.py**:
+
 * Change "backup_date" to be the date and time from when you have the backup db you are using to restore
 * Change the "approot" and "appfolder" to reflect your Django settings
 * Optional: change the name/location of the output file by changing "dest"
 
 In **db_restore.py**:
+
 * Change the "approot" and "appfolder" to reflect your Django settings
 * Optional: if you changed the destination file change the name/location of the input file by changing "orig"
 
@@ -37,7 +39,7 @@ Navigate to the scripts directory
 Do a once over on the JSON output file before running db_restore.py. Make sure you don't have any non-standard fields that haven't been dealt with in the db_cache.py file (Checkout Missing Features and Future Work if you're unsure)
 
 Each item in your JSON file will take this format:
-''' javascript
+
 {
 	
 	"app": app_name,
@@ -46,7 +48,7 @@ Each item in your JSON file will take this format:
 		"data_field": value_of_instance_field,
 	}
 }
-'''
+
 
 ### Execute db_restore.py
 
