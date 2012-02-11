@@ -52,7 +52,7 @@ Each item in your JSON file will take this format:
 
 ### Execute db_restore.py
 
-	$ python db_cache.py
+	$ python db_restore.py
 
 
 ### Complete
