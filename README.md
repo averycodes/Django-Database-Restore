@@ -40,14 +40,14 @@ Do a once over on the JSON output file before running db_restore.py. Make sure y
 
 Each item in your JSON file will take this format:
 
-{
+
 	
 	"app": app_name,
 	"model": model_name,
 	"data": {
 		"data_field": value_of_instance_field,
 	}
-}
+
 
 
 ### Execute db_restore.py
