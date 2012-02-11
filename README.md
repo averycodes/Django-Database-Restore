@@ -39,7 +39,7 @@ Do a once over on the JSON output file before running db_restore.py. Make sure y
 Each item in your JSON file will take this format:
 ''' javascript
 {
-  
+	
 	"app": app_name,
 	"model": model_name,
 	"data": {
